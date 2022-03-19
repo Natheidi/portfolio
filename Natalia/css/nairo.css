@@ -1,0 +1,288 @@
+body {
+    background-color: #000;
+    margin: 0;
+    font-family: 'Rubik', sans-serif;
+    color: #fff;
+    box-sizing: border-box;  
+}
+.nav-container {
+    display: flex;
+    flex-direction: row;
+    width: 80px;
+}
+.side-nav {
+    display: flex;
+    flex-direction: column;
+    width: 80px;
+    height: 100%;
+    position: fixed;
+    border-right: #25252c 1.5px solid;
+    background-color: #0c0c14;
+}
+.logo-side-nav {
+    display: flex;
+    align-items: center;
+    width: 80px;
+    height: 80px;
+    background-color: #ff9301;
+}
+.logo-letter {
+    color: #fff;
+    text-align: center;
+    font-size: 40px;
+    font-weight: bolder;
+    margin-left: auto;
+    margin-right: auto;
+}
+.top-bar {
+    color: #fff;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding-top: 35px;
+    font-size: 0.9rem;      
+}
+.top-bar-info{
+    display: flex;
+    flex-direction: row;
+}
+.top-bar-contact:first-child{
+    padding-left: 30px;
+}
+.top-bar-contact{
+    font-weight: 400;
+    transition: all 0.3s linear;
+    width: 200px;
+}
+.top-bar-contact:hover{
+    cursor: pointer;
+    color: #ff9301;
+}
+.top-bar-language{
+    display: flex;
+    flex-direction: row;
+    margin-left: 1100px;
+    z-index: 100;
+}
+.box-en{
+    height: 20px;
+    background-color: #ff9301;
+    padding: 5px 8px 5px 8px;
+}
+.box-en:hover{
+    cursor: pointer;
+}
+.box-fr{
+    height: 20px;
+    background-color: #000;
+    padding: 5px 8px 5px 8px;
+    margin-left: 8px;
+}
+.box-fr:hover{
+    cursor: pointer;
+    background-color: #ff9301;
+}
+.icone-nav{
+    color: #fff;
+    font-size: 1.2rem;
+    margin-left: auto;
+    margin-right: auto;      
+}
+.menu-side-nav{
+    border-bottom: #25252c 1.5px solid;
+    text-align: center; 
+    display: flex;
+    align-items: center; 
+    height: 70px;   
+}
+.menu-side-nav:last-child{
+    border: 0; 
+}
+.menu-side-nav:nth-child(2){
+    margin-top: 40px;
+}
+.menu-side-nav:hover{
+    cursor: pointer;
+}
+.home-banner{
+    margin: 0;
+    padding-bottom: 300px;
+    background-image: url("../img/home-banner.png");
+    background-repeat: no-repeat;
+    background-position: right; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+}
+.home-main-text{
+    padding-top: 230px;
+    padding-left: 480px;   
+}
+.header-hello{
+    font-size: 20px;
+    font-weight: 300;
+    margin: 0;  
+    margin-bottom: 10px;    
+}
+.header-name{
+    font-size: 80px;
+    margin: 0;
+    margin-bottom: 10px;
+}
+.header-orange{
+    font-size: 30px;
+    font-weight: 400;
+    margin: 0;
+    margin-bottom: 10px;
+    color: #ff9301;
+}
+.home-about-me{
+    font-size: 16px;
+    font-weight: 100;
+    line-height: 30px;
+    margin: 0;
+}
+.cv-button{
+    padding: 15px;
+    width: 180px;
+    font-size: 15px;
+    font-weight: 600;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+    border: 0px;
+    margin-top: 10px;
+    transition: all 0.2s linear;
+}
+.cv-button:hover{
+    background-color: transparent;
+    color: #fff;
+    border: #fff solid 1px;
+    cursor: pointer;
+}
+.biography-big-box{
+    width: calc(100%-80px);
+    background-color: #0e0e17;  
+}
+.biography-container{
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    background-color: #0e0e17;
+    padding-left: 80px;
+    padding-top: 60px;
+    flex-wrap: wrap;
+}
+.biography-img{
+    margin-top: 20px;
+    margin-right: 40px;
+    text-align: center;
+    position: relative;
+}
+.icones-circle{
+    width: 70%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    justify-content: space-around;
+    margin-left: auto;
+    margin-right: auto;
+}
+.icon{
+    width:33px;
+    height: 33px;
+    border-radius: 50%;
+    border: 2px #fff solid;
+    color: #fff;
+    text-align: center;
+    font-size: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;   
+    transition: all 0.3s linear;
+    position: absolute;
+    background-color: #000;  
+}
+.icon-1{
+    top: 300px; 
+    left: 60px;
+}
+.icon-2{
+    top: 328px; 
+    left: 110px;
+}
+.icon-3{
+  top: 340px;  
+}
+.icon-4{
+    top: 328px; 
+    right: 110px;
+}
+.icon-5{
+    top: 300px; 
+    right: 60px;
+}
+.icon:hover{
+    background-color: #ff9301;
+    cursor: pointer;
+}
+.biography-main-text{
+    margin-top: 20px;
+    margin-left: 40px;  
+}
+.biography-radius-img{
+    border-radius: 50%;
+    border: #ff9301 5px solid;
+    width: 346px;
+}
+.h1-bio{
+    margin-bottom: 30px;
+}
+.p1-biography{
+    line-height: 29px;
+    font-size: 15px;
+    color: hsla(0,0%,100%,.8);
+}
+.p-radius-img{
+    color: hsla(0,0%,100%,.8);
+    margin-top: 30px;
+}
+.bio-contact-details{
+    width: 70%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.span-details-letters{
+    margin-left: 7px;
+    font-weight: 100;
+}
+.seperate-border{
+    background-image: url("../img/border-dark.png");
+    padding-top: 80px;
+    height: 80px;
+    width: 100%;
+    padding-bottom: 80px;
+    background-repeat: repeat-x;
+    background-size: auto 6px;
+    background-position: center;
+    filter: invert(1);
+}
+.biography-position{
+    position: relative;
+    z-index: 1;
+}
+.orange-circle{
+    background-color: #ff9301;
+    opacity: 50%;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    position: absolute;
+    top: -8px;
+    left: -7px;
+    bottom: 5px;
+    z-index: -1;
+}
