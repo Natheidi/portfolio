@@ -12,6 +12,36 @@
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script src='https://api.mapbox.com/mapbox-gl-js/v2.3.1/mapbox-gl.js'></script>
+    <link href='https://api.mapbox.com/mapbox-gl-js/v2.3.1/mapbox-gl.css' rel='stylesheet' />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="./js/nairo.js" defer></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <script src="./js/jquery.scrollTo.min.js" defer></script>
+    <script>
+        jQuery(function ($) {
+            //reset the scroll
+            $.scrollTo(0);
+            $('#link1').click(function () {
+                $.scrollTo($('#home-banner'), 1000);
+            });
+            $('#link2').click(function () {
+                $.scrollTo($('#biography-container'), 1000);
+            });
+            $('#link3').click(function () {
+                $.scrollTo($('#dark-section-2'), 1000);
+            });
+            $('#link4').click(function () {
+                $.scrollTo($('#lighter-section-2'), 1000);
+            });
+            $('#link5').click(function () {
+                $.scrollTo($('#dark-section-3'), 1000);
+            });
+            $('#link6').click(function () {
+                $.scrollTo($('#lighter-section-3'), 1000);
+            });
+        });
+    </script>
 </head>
 
 <body>
@@ -20,36 +50,37 @@
             <h1 class="logo-letter">N</h1>
         </div>
         <div class="menu-side-nav">
-            <a class="nav-links" href="#home-banner">
+            <a class="nav-links" id="link1" href="#">
                 <i class="fa-solid fa-house-chimney icone-nav"></i>
             </a>
         </div>
         <div class="menu-side-nav">
-            <a class="nav-links" href="#biography-container">
+            <a class="nav-links" id="link2" href="#">
                 <i class="fa-solid fa-user icone-nav"></i>
             </a>
         </div>
         <div class="menu-side-nav">
-            <a class="nav-links" href="#dark-section-2">
+            <a class="nav-links" id="link3" href="#">
                 <i class="fa-solid fa-file icone-nav"></i>
             </a>
         </div>
         <div class="menu-side-nav">
-            <a class="nav-links" href="#lighter-section-2">
+            <a class="nav-links" id="link4" href="#">
                 <i class="fa-solid fa-suitcase icone-nav"></i>
             </a>
         </div>
         <div class="menu-side-nav">
-            <a class="nav-links" href="#dark-section-3">
+            <a class="nav-links" id="link5" href="#">
                 <i class="fa-solid fa-blog icone-nav"></i>
             </a>
         </div>
         <div class="menu-side-nav">
-            <a class="nav-links" href="#lighter-section-3">
+            <a class="nav-links" id="link6" href="#">
                 <i class="fa-solid fa-phone icone-nav"></i>
             </a>
         </div>
     </div>
+
 
     <div id="home-banner">
         <div class="top-bar">
@@ -80,7 +111,8 @@
 
     </div>
     <div class="lighter-big-box">
-        <div id="biography-container">
+        <div data-aos="fade-up" data-aos-easing="linear" data-aos-duration="900" id="biography-container">
+            <a href="#" class="scroll-up"></a>
             <div class="biography-img">
                 <img class="biography-radius-img" src="img/about-me.jpg"
                     alt="portrait, photo, colorful, artistic, woman" />
@@ -109,7 +141,7 @@
                     Nairobi Gadot
                 </h2>
             </div>
-            <div class="biography-main-text">
+            <div data-aos="fade-up" data-aos-easing="linear" data-aos-duration="1100" class="biography-main-text">
                 <div class="biography-position">
                     <h1 class="h1-bio">Biography</h1>
                     <div class="orange-circle"></div>
@@ -170,19 +202,19 @@
             </div>
         </div>
         <div class="about-info-container">
-            <div class="about-info-1">
+            <div data-aos="fade-right" data-aos-easing="linear" data-aos-duration="1100" class="about-info-1">
                 <i class="fa-solid fa-mobile-screen-button about-icon"></i>
                 <h2 class="h2-about">Web Design</h2>
                 <p class="p-about">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
                     incididunt ut labore et dolore magna aliqua.</p>
             </div>
-            <div class="about-info-1">
+            <div data-aos="fade-right" data-aos-easing="linear" data-aos-duration="900" class="about-info-1">
                 <i class="fa-solid fa-display about-icon"></i>
                 <h2 class="h2-about">Web Development</h2>
                 <p class="p-about">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
                     incididunt ut labore et dolore magna aliqua.</p>
             </div>
-            <div class="about-info-1">
+            <div data-aos="fade-right" data-aos-easing="linear" data-aos-duration="700" class="about-info-1">
                 <i class="fa-solid fa-bullseye about-icon"></i>
                 <h2 class="h2-about">SEO Marketing</h2>
                 <p class="p-about">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
@@ -197,7 +229,7 @@
             </div>
         </div>
         <div class="about-info-container">
-            <div class="awards-1">
+            <div data-aos="fade-right" data-aos-easing="linear" data-aos-duration="1100" class="awards-1">
                 <img class="img-awards" src="img/a1.png" />
                 <div class="inside-awards">
                     <h4 class="h-awards">Creative Designer</h4>
@@ -205,14 +237,14 @@
                 </div>
 
             </div>
-            <div class="awards-1">
+            <div data-aos="fade-right" data-aos-easing="linear" data-aos-duration="900" class="awards-1">
                 <img class="img-awards" src="img/a2.png" />
                 <div class="inside-awards">
                     <h4 class="h-awards">Yearly Best Performer</h4>
                     <p class="p-awards">Site of the day</p>
                 </div>
             </div>
-            <div class="awards-1">
+            <div data-aos="fade-right" data-aos-easing="linear" data-aos-duration="700" class="awards-1">
                 <img class="img-awards" src="img/a3.png" />
                 <div class="inside-awards">
                     <h4 class="h-awards">Best Learner Award</h4>
@@ -228,7 +260,8 @@
             </div>
         </div>
         <div class="about-info-container">
-            <div class="testimonials-1">
+            <div data-aos="fade-up"
+            data-aos-duration="2000" class="testimonials-1">
                 <img class="img-testimonials" src="img/team-1.jpg" />
                 <div class="inside-awards">
                     <p class="p-awards p-testimonials">Lorem ipsum dolor sit amet, consectetur adipiscing
@@ -238,7 +271,8 @@
                     <p class="p-awards">CEO at ib-themes</p>
                 </div>
             </div>
-            <div class="testimonials-1">
+            <div data-aos="fade-up"
+            data-aos-duration="3000" class="testimonials-1">
                 <img class="img-testimonials" src="img/team-2.jpg" />
                 <div class="inside-awards">
                     <p class="p-awards p-testimonials">Lorem ipsum dolor sit amet, consectetur adipiscing
@@ -257,7 +291,8 @@
                 </div>
             </div>
             <div class="about-info-container experience-container">
-                <div class="experience-1">
+                <div data-aos="fade-up"
+                data-aos-duration="1000" class="experience-1">
                     <div class="exp-full-box">
                         <div class="exp-part-1">
                             <h3 class="h3-experience">Sr. Front-end Engineer</h3>
@@ -281,7 +316,8 @@
                         </div>
                     </div>
                 </div>
-                <div class="experience-1">
+                <div data-aos="fade-up"
+                data-aos-duration="1000" class="experience-1">
                     <div class="exp-full-box">
                         <div class="exp-part-1">
                             <h3 class="h3-experience">Visual Designer</h3>
@@ -304,7 +340,8 @@
                         </div>
                     </div>
                 </div>
-                <div class="experience-1">
+                <div data-aos="fade-up"
+                data-aos-duration="1000" class="experience-1">
                     <div class="exp-full-box">
                         <div class="exp-part-1">
                             <h3 class="h3-experience">Animation Artist</h3>
@@ -338,7 +375,8 @@
             <div class="orange-circle"></div>
         </div>
     </div>
-    <div class="about-info-container edu-skills-container">
+    <div data-aos="fade-up"
+    data-aos-duration="1500" class="about-info-container edu-skills-container">
         <div class="edu-skills-1">
             <p class="p-awards p-edu-skills">
                 2018-2020
@@ -369,7 +407,8 @@
             </p>
 
         </div>
-        <div class="edu-skills-2">
+        <div data-aos="fade-up"
+        data-aos-duration="2500" class="edu-skills-2">
             <div class="edu-percents">
                 <p class="p-awards p-percents">
                     92 <span class="white-percents">%</span>
@@ -425,21 +464,24 @@
             </div>
             <div class="portfolio-galery">
                 <div class="galery-col-1">
-                    <div class="img-container">
+                    <div data-aos="fade-right"
+                    data-aos-offset="100" data-aos-easing="linear" class="img-container">
                         <img class="galery-img" src="img/m-portfolio-1.jpg" />
                         <div class="overlay">
                             <h2 class="overlay-h">Business Card</h2>
                             <p class="overlay-p">Nuna ios App</p>
                         </div>
                     </div>
-                    <div class="img-container">
+                    <div data-aos="fade-right"
+                    data-aos-offset="120" data-aos-easing="linear" class="img-container">
                         <img class="galery-img" src="img/m-portfolio-4.jpg" />
                         <div class="overlay">
                             <h2 class="overlay-h">Business Card</h2>
                             <p class="overlay-p">Nuna ios App</p>
                         </div>
                     </div>
-                    <div class="img-container">
+                    <div data-aos="fade-right"
+                    data-aos-offset="130" data-aos-easing="linear" class="img-container">
                         <img class="galery-img" src="img/m-portfolio-7.jpg" />
                         <div class="overlay">
                             <h2 class="overlay-h">E-learning App</h2>
@@ -448,21 +490,24 @@
                     </div>
                 </div>
                 <div class="galery-col-1">
-                    <div class="img-container">
+                    <div data-aos="fade-right"
+                    data-aos-offset="140" data-aos-easing="linear" class="img-container">
                         <img class="galery-img" src="img/m-portfolio-2.jpg" />
                         <div class="overlay">
                             <h2 class="overlay-h">Design App</h2>
                             <p class="overlay-p">Nuna ios App</p>
                         </div>
                     </div>
-                    <div class="img-container">
+                    <div data-aos="fade-right"
+                    data-aos-offset="150" data-aos-easing="linear" class="img-container">
                         <img class="galery-img" src="img/m-portfolio-5.jpg" />
                         <div class="overlay">
                             <h2 class="overlay-h">Business App</h2>
                             <p class="overlay-p">Nuna ios App</p>
                         </div>
                     </div>
-                    <div class="img-container">
+                    <div data-aos="fade-right"
+                    data-aos-offset="160" data-aos-easing="linear" class="img-container">
                         <img class="galery-img" src="img/m-portfolio-8.jpg" />
                         <div class="overlay">
                             <h2 class="overlay-h">Design App</h2>
@@ -471,21 +516,24 @@
                     </div>
                 </div>
                 <div class="galery-col-1">
-                    <div class="img-container">
+                    <div data-aos="fade-right"
+                    data-aos-offset="170" data-aos-easing="linear" class="img-container">
                         <img class="galery-img" src="img/m-portfolio-3.jpg" />
                         <div class="overlay">
                             <h2 class="overlay-h">Visual Design</h2>
                             <p class="overlay-p">Nuna ios App</p>
                         </div>
                     </div>
-                    <div class="img-container">
+                    <div data-aos="fade-right"
+                    data-aos-offset="180" data-aos-easing="linear" class="img-container">
                         <img class="galery-img" src="img/m-portfolio-6.jpg" />
                         <div class="overlay">
                             <h2 class="overlay-h">Chatting App</h2>
                             <p class="overlay-p">Nuna ios App</p>
                         </div>
                     </div>
-                    <div class="img-container">
+                    <div data-aos="fade-right"
+                    data-aos-offset="190" data-aos-easing="linear" class="img-container">
                         <img class="galery-img" src="img/m-portfolio-9.jpg" />
                         <div class="overlay">
                             <h2 class="overlay-h">Web App</h2>
@@ -504,7 +552,8 @@
             </div>
 
             <div class="blog-wrap">
-                <div class="blog-box">
+                <div data-aos="fade-right"
+                data-aos-offset="200" data-aos-easing="linear" class="blog-box">
                     <img class="blog-img" src="img/blog-4.jpg" />
                     <p class="blog-p">
                         29/FEB/2020 - BY ALEX
@@ -514,7 +563,8 @@
                     </p>
 
                 </div>
-                <div class="blog-box">
+                <div data-aos="fade-right"
+                data-aos-offset="100" data-aos-easing="linear" class="blog-box">
                     <img class="blog-img" src="img/blog-2.jpg" />
                     <p class="blog-p">
                         29/FEB/2020 - BY ALEX
@@ -525,7 +575,8 @@
                 </div>
             </div>
             <div class="blog-wrap">
-                <div class="blog-box">
+                <div data-aos="fade-right"
+                data-aos-offset="200" data-aos-easing="linear" class="blog-box">
                     <img class="blog-img" src="img/blog-3.jpg" />
                     <p class="blog-p">
                         29/FEB/2020 - BY ALEX
@@ -535,7 +586,8 @@
                     </p>
                 </div>
 
-                <div class="blog-box">
+                <div data-aos="fade-right"
+                data-aos-offset="100" data-aos-easing="linear" class="blog-box">
                     <img class="blog-img" src="img/blog-1.jpg" />
                     <p class="blog-p">
                         29/FEB/2020 - BY ALEX
@@ -549,7 +601,8 @@
     </div>
     <div id="lighter-section-3">
         <div class="contact-section-container">
-            <div class="contact-text">
+            <div  data-aos="fade-right"
+            data-aos-offset="200" data-aos-easing="linear"  class="contact-text">
                 <h1 class="contact-h1">What's your story?</h1>
                 <h1 class="contact-h1">Get in touch</h1>
                 <p class="contact-p p-awards">Always available for freelancing if the right</p>
@@ -570,7 +623,8 @@
                     </div>
                 </div>
             </div>
-            <div class="contact-form">
+            <div  data-aos="fade-right"
+            data-aos-offset="100" data-aos-easing="linear"  class="contact-form">
                 <h2 class="h2-form">Say something</h2>
                 <div class="input-section">
                     <input class="input-1" type="text" placeholder="Full name">
@@ -582,9 +636,31 @@
             </div>
 
         </div>
+        <div data-aos="fade-up"
+        data-aos-duration="1000" id="map"></div>
+
+        <div class="footer-section">
+            <div class="footer-container">
+                <div class="footer-icon">
+                    <i class="fa-brands fa-facebook-f footer-icon-1"></i>
+                    <i class="fa-brands fa-twitter footer-icon-1"></i>
+                    <i class="fa-brands fa-instagram footer-icon-1"></i>
+                    <i class="fa-brands fa-linkedin-in footer-icon-1"></i>
+                    <i class="fa-brands fa-pinterest-p footer-icon-1"></i>
+                </div>
+                <div class="footer-copyright">
+                    <p class="p-footer">&copy; 2022 copyright <span class="footer-span">ib-themes</span> all right
+                        reserved</p>
+                </div>
+            </div>
+
+        </div>
     </div>
-
-
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+    <script src="js/about.js"></script>
 </body>
 
 </html>

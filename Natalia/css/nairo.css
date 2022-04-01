@@ -613,6 +613,7 @@ body {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    padding-bottom: 50px;
 }
 .contact-text, .contact-form{
     padding-top: 30px;
@@ -620,6 +621,7 @@ body {
 .contact-text-section-icon{
     display: flex;
     flex-direction: row;
+    margin: 0;
 }
 .contact-icon{
     color: #ff9301;
@@ -627,11 +629,15 @@ body {
     font-size: 25px;
     margin-top: 19px;
 }
+.contact-h1{
+    margin: 0;
+    font-weight: 500;
+}
 .section-icon-box{
-    padding-top: 20px;
+    padding-top: 3px;
 }
 .p-contact-icon{
-    font-size: 19px;
+    font-size: 17px;
     font-weight: 400;
 }
 .input-section{
@@ -666,7 +672,7 @@ body {
     width: calc(100% - 10px);
     max-width: calc(100% - 10px);
     min-width: calc(100% - 10px);
-    height: 30px;
+    height: 60px;
     min-height: 25px;
     margin-bottom: 10px;
     padding-top: 10px;
@@ -679,7 +685,56 @@ body {
 .form-button{
     font-size: 16px;
 }
-
+.footer-section{
+    background-color: #0b0b13;
+    width: calc(100%-80px);
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.footer-container{
+    width: 55%;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    justify-content: space-between;
+}
+.p-footer{
+    font-weight: 100;
+    color: #c8c5ca;
+    font-size: 14px;
+}
+.footer-span{
+    color:#ff9301;
+}
+.footer-icon{
+    color: #fff;
+    font-size: 14px;
+    padding-top: 10px;
+}
+.footer-icon-1{
+    margin-left: 18px;
+}
+.footer-icon:first-child{
+    margin: 0;
+}
+#map{
+    height: 40vh;
+    width: 55vw;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 150px;
+    margin-bottom: 100px;
+  }
+  .scroll-up{
+    width: 64px;
+    height: 64px;
+    text-decoration: none;
+    background: url("img/scroll.png") no-repeat 0px 0px;
+    position: fixed;
+    right: 200px;
+    bottom: 50px;
+  }
+  
 
 
 
