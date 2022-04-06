@@ -319,7 +319,71 @@ body {
     border-radius: 10px;
     display: flex;
     flex-direction: column;
+    position: relative;
+    overflow: hidden;
 }
+.black-area{
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    top: -200px;
+    left: -200px;
+}
+.about-info-1:hover .black-area{
+    background-color: #010101;
+    position: absolute;
+    top: -70px;
+    left: -50px;
+    transition: all 0.7s ease-in-out;
+    z-index: -2;
+    border-radius: 50%;
+}
+.orange-area{
+    content: "";
+    width: 200px;
+    height: 200px;
+    transition: all .5s ease-in-out;
+    top: -70px;
+    left: -50px;
+    border-radius: 50%;
+    z-index: -2;
+    background: #ff9301;
+    position: absolute;
+}
+.about-info-1:hover .orange-area{
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    background-color: #ff9301;
+    position: absolute;
+    z-index: -4;
+    left: 0;
+    top: 0;
+    cursor: pointer;
+    transition: all 0.5s ease-in-out;
+  
+}
+/*
+.img-container:hover{
+    transform: scale(1);
+}
+.img-container .overlay{
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 0;
+    height: 0;
+    transition: all 0.5s ease-in-out;
+    overflow: hidden;
+    white-space: nowrap;
+    opacity: 0;
+}
+.img-container:hover .overlay{
+    cursor: pointer;
+    width: 96%;
+    height: 100%;
+    opacity: 1;
+}
+*/
 .seperate-border-2{
     background-image: url("../img/border-dark.png");
     padding-top: 80px;
