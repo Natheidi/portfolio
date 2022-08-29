@@ -558,6 +558,7 @@ body {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    padding: 5px;
 }
 
 .exp-part-1 {
@@ -578,13 +579,12 @@ body {
 .exp-time-orange-border {
     background-color: #ff9301;
     width: 80px;
-    height: 30px;
+    padding: 5px;
     border-bottom-left-radius: 8px;
     border-top-left-radius: 8px;
     border-bottom-right-radius: 8px;
     border-top-right-radius: 8px;
     text-align: center;
-    padding-top: 10px;
 }
 
 .p-exp {
@@ -607,6 +607,7 @@ body {
     flex-direction: column;
     padding: 30px;
     height: 380px;
+    margin-right: 20px;
 }
 
 .p-edu-skills {
