@@ -392,7 +392,7 @@ body {
 .about-info-container {
     display: flex;
     justify-content: space-between;
-    width: 55%;
+    width: 50%;
     margin-left: auto;
     margin-right: auto;
     padding-top: 50px;
@@ -409,6 +409,7 @@ body {
     flex-direction: column;
     position: relative;
     overflow: hidden;
+    margin-right: 10px;
 }
 
 .black-area {
@@ -558,7 +559,7 @@ body {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    padding: 5px;
+    padding: 15px;
 }
 
 .exp-part-1 {
@@ -1004,25 +1005,6 @@ body {
 .hamburger {
 	display: none;
 }
-
-.arrow-up{
-    display: block;
-    background-color: #fff;
-    color: #ff9301;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    padding-left: 16px;
-    padding-right: 16px;
-    font-size: 30px;
-    border-radius: 50%;
-    box-shadow: none;
-    position: fixed;
-    bottom: 30px;
-    left: 900px;
-    z-index: 100;
-    cursor: pointer;
-}
-
 @media (max-width: 1880px) {
     .p-awards {
         font-size: 12px;
