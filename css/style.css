@@ -21,6 +21,7 @@ body {
     position: fixed;
     border-right: #25252c 1.5px solid;
     background-color: #0c0c14;
+    z-index: 1;
 }
 
 .logo-side-nav {
